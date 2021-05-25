@@ -27,7 +27,95 @@ header {
     &-items {
       display: flex;
       &-init {
-        display: none;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        min-width: 300px;
+        padding: 18px 0;
+        border-radius: 8px;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 4%), 0 4px 4px rgba(0, 0, 0, 8%);
+        background-color: #fff;
+        list-style-type: none;
+        transform: translateX(-50%);
+        p {
+          display: block;
+          padding: 0 24px;
+          margin-bottom: 20px;
+          font-size: 12px;
+          line-height: 18px;
+          font-weight: 700;
+          letter-spacing: 1px;
+          color: rgba(0, 0, 0, 0.4);
+        }
+      }
+    }
+    &-item {
+      position: relative;
+      margin-right: 32px;
+      margin-bottom: 0;
+      &-init {
+        display: block;
+        margin-bottom: 8px;
+      }
+    }
+    &-link {
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 20px;
+      color: $dark;
+      border-radius: 2px;
+      border-bottom: 2px solid transparent;
+      transition: all 0.1s ease-in-out;
+      &:hover {
+        border-bottom: 2px solid $primary;
+      }
+      img {
+        margin-left: 2px;
+      }
+      &-init {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 8px 11px 8px 34px;
+        transition: all 0.1s ease-in-out;
+        img {
+          display: block;
+          width: 48px;
+          height: 48px;
+          margin-right: 24px;
+        }
+        span {
+          font-size: 13px;
+          line-height: 19px;
+          font-weight: 400;
+          color: #000;
+        }
+      }
+    }
+    &-contact {
+      display: block;
+      min-width: 112px;
+      max-width: 248px;
+      text-align: center;
+      border-radius: 8px;
+      background-color: var(--primary);
+      transform: perspective(800px);
+      transition: all 0.2s ease-in-out;
+      a {
+        display: block;
+        width: 100%;
+        padding: 10px 16px;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 700;
+        color: #fff;
+        transform: translateZ(1000px);
+      }
+      &:hover {
+        transform: perspective(800px) translateZ(43px);
       }
     }
   }

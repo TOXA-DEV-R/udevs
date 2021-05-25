@@ -5,3 +5,23 @@
   list-style: none;
   box-sizing: border-box;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Manrope", sans-serif;
+}
+
+:root {
+  --dark: #000;
+  --primary: #1b5bf7;
+}
+
+$dark: var(--dark);
+$primary: var(--primary);

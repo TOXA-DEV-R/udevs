@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header>
       <div className="container">
-        <nav className="row navbar">
+        <nav className="row navbar align-items-center justify-content-between">
           <div className="col-auto">
             <AnchorLink href="/home" className="navbar-logo" to="/" offset="72">
               <img src={logoSvg} alt="logo" />
