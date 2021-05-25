@@ -1,3 +1,9 @@
+@mixin display-JuCenter-AlCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 header {
   width: 100%;
   box-shadow: 0 1px 0 #e5e9f2;
@@ -5,4 +11,24 @@ header {
   top: 0;
   z-index: 999;
   background-color: #fff;
+  height: 72px;
+  @include display-JuCenter-AlCenter();
+  .navbar {
+    &-menu {
+      display: flex;
+    }
+    &-logo {
+      display: block;
+      width: 96px;
+      img {
+        width: 100%;
+      }
+    }
+    &-items {
+      display: flex;
+      &-init {
+        display: none;
+      }
+    }
+  }
 }
