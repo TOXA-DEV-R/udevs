@@ -1,6 +1,8 @@
 import React from "react";
 import udevs from "../images/logo.svg";
 import Typewriter from "typewriter-effect";
+import AnchorLink from "react-anchor-link-smooth-scroll";
+import heroSvg from "../images/hero.svg";
 function Hero() {
   return (
     <div className="hero">
@@ -24,8 +26,13 @@ function Hero() {
                 }}
               />
             </h1>
+            <div className="hero-contact">
+              <AnchorLink href="/">Cвязаться</AnchorLink>
+            </div>
           </div>
-          <div className="col-lg-6"></div>
+          <div className="col-lg-6 hero-right">
+            <img src={heroSvg} alt="Udevs - Software development agency" />
+          </div>
         </div>
       </div>
     </div>
