@@ -1,3 +1,15 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: georgia, serif;
+  font-weight: 400;
+  word-wrap: break-word;
+  font-kerning: normal;
+  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
+  font-feature-settings: "kern", "liga", "clig", "calt";
+}
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +20,30 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
 
+:root {
+  --dark: #000;
+  --primary: #1b5bf7;
+  --secondary: #464359;
+}
+
+$dark: var(--dark);
+$primary: var(--primary);
+$secondary: var(--secondary);
+
+h1 {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding: 0;
+  color: inherit;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+  font-size: 2.25rem;
+  line-height: 1.1;
+}
+
 body,
 h1,
 h2,
@@ -17,11 +53,3 @@ h5,
 h6 {
   font-family: "Manrope", sans-serif;
 }
-
-:root {
-  --dark: #000;
-  --primary: #1b5bf7;
-}
-
-$dark: var(--dark);
-$primary: var(--primary);

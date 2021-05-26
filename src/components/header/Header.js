@@ -3,6 +3,7 @@ import logoSvg from "../../images/logo.svg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import NavbarLinkData from "./NavbarLinkData";
 import angleDown from "../../images/data- img-112.svg";
+
 const Header = () => {
   return (
     <header>
@@ -39,7 +40,9 @@ const Header = () => {
                       return (
                         <li className="navbar-item-init" key={indexInit}>
                           <AnchorLink href="/" className="navbar-link-init">
-                            <img src={linkInit.img} alt={linkInit.text} />
+                            <div className="img">
+                              <img src={linkInit.img} alt={linkInit.text} />
+                            </div>
                             <span>{linkInit.text}</span>
                           </AnchorLink>
                         </li>

@@ -1,10 +1,12 @@
 import React from "react";
-import Header from "../container/header/Header";
+import Header from "../components/header/Header";
+import Hero from "../components/Hero";
 
 const PageHome = () => {
   return (
     <>
       <Header />
+      <Hero />
     </>
   );
 };
